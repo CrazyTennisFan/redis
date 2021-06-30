@@ -27,6 +27,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+/* This is a test */
+
 #include "server.h"
 #include "sha256.h"
 #include <fcntl.h>
