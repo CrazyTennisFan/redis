@@ -3,7 +3,7 @@ source "../tests/includes/start-init-tests.tcl"
 source "../tests/includes/init-tests.tcl"
 
 foreach_sentinel_id id {
-    S $id sentinel debug default-down-after 1000
+    
 }
 
 if {$::simulate_error} {
