@@ -35,7 +35,7 @@ proc 10_test_number_of_replicas {n_replicas_expected} {
         foreach_sentinel_id id {
          
             set len [llength [S $id SENTINEL REPLICAS mymaster]]
-            wait_for_condition 40 50 {
+            wait_for_condition 40 500 {
                 [llength [S $id SENTINEL REPLICAS mymaster]] == $n_replicas_expected
             } else {
                 fail "Sentinel replies with a wrong number of replicas with replica-announced=yes (expected $n_replicas_expected but got $len) on sentinel $id"
