@@ -33,7 +33,7 @@ jobs:
 
   test-ubuntu-jemalloc:
     runs-on: ubuntu-latest
-    if: github.repository == 'redis/redis'
+    if: github.repository == 'Flag-2021/redis'
     timeout-minutes: 14400
     steps:
     - name: prep
