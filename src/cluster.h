@@ -3,6 +3,7 @@
 
 /*-----------------------------------------------------------------------------
  * Redis cluster data structures, defines, exported API.
+ * I would like to add some comments
  *----------------------------------------------------------------------------*/
 
 #define CLUSTER_SLOTS 16384
